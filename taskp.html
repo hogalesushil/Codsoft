@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-color: #e9eef2
+        }
+
+        .navbar {
+            display: flex;
+            /* border: 2px solid red; */
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            display: block;
+            height: 100px;
+            width: 100px;
+            margin-right: 70px;
+        }
+
+        .contact {
+            display: flex;
+            border-radius: 2px solid red;
+            margin-left: 230px;
+            padding: 3px;
+            /* border: 2px solid red; */
+            height: 50px;
+            width: 200px;
+        }
+
+        .i1 {
+            margin: 2px;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+        }
+
+        .i2 {
+            margin: 2px;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+        }
+
+        .i3 {
+            margin: 2px;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+        }
+
+        .i4 {
+            margin: 2px;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+        }
+
+        .resume button {
+            display: block;
+            background-color: rgb(220, 104, 27);
+            border-radius: 15px;
+            height: 70px;
+            width: 200px;
+            /* border: 2px solid red; */
+            margin-left: 300px;
+            transition: all;
+            transition-timing-function: ease-in-out;
+            width: 150px;
+            height: 50px;
+            margin-top: 1px;
+
+        }
+
+
+        .logo img {
+            margin-top: 15px;
+            margin-left: 10px;
+            height: 55px;
+            width: 55px;
+        }
+
+
+        /* container */
+
+        .container {
+            margin: 45px;
+            padding: 1px;
+            border: 2px;
+            display: flex;
+            height: 350px;
+            /* border: 2px solid red; */
+            /* justify-content: center; */
+        }
+
+        .box1 {
+            /* border: 2px solid red;   */
+            height: 400px;
+            /* width: 350px; */
+            margin: 90px;
+            margin-left: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .box1 h1 {
+            color: rgb(229, 81, 18);
+            margin-right: -70px;
+            font-size: 3rem;
+            font-display: initial;
+        }
+
+        .p1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 2rem;
+            color: rgb(92, 89, 86);
+            text-align: justify;
+            margin-left: 20px;
+        }
+
+        .box2 {
+            /* border: 2px solid red; */
+            /* height: 200px;
+            width: 200px; */
+            margin: 6px;
+            animation: infinite;
+        }
+
+        .box2 img {
+            height: 400px;
+            width: 400px;
+            animation-name: pimage;
+            animation-timing-function: ease-in-out;
+            animation-duration: 0.9s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes pimage {
+            from {
+                margin-top: 6px;
+            }
+
+            to {
+                margin-top: 14px;
+            }
+        }
+
+
+        /* .resume button {
+            margin-top: 20px;
+            margin-left: 830px;
+            background-color: rgb(220, 104, 27);
+            border-radius: 15px;
+            border: 1px solid red;
+            width: 150px;
+            height: 50px;
+            transition: all;
+            transition-timing-function: ease-in-out;
+
+        } */
+
+        button:hover {
+            margin-top: 4px;
+
+        }
+
+        .resume button a {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1rem;
+            text-decoration: none;
+            color: rgb(246, 243, 241);
+        }
+
+
+        /* a1 */
+        .a1 {
+            margin: auto;
+            padding: 20px;
+            height: 300px;
+            width: 1000px;
+            /* border: 2px solid royalblue; */
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            color: orangered;
+            transform: all;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.8s;
+            transition-duration: 2s;
+
+        }
+
+        .a1:hover {
+            background-color: orangered;
+            color: white;
+            height: 310px;
+            width: 1010px;
+        }
+
+        .b1 img {
+            border-radius: 15px;
+            height: 250px;
+            width: 300px;
+            border: 2px solid royalblue;
+            margin-left: 50px;
+        }
+
+        .b2 {
+            margin-left: 200px;
+            height: 250px;
+            width: 350px;
+            /* border: 2px solid royalblue; */
+        }
+
+        .b2 h1 {
+            font-size: 2rem;
+            font-display: initial;
+            text-align: center;
+            /* color: orangered; */
+            margin-top: 2px;
+            transition: all;
+            transition-duration: 2s;
+        }
+
+        /* .b2 h1:hover {
+            color: #e9eef2;
+        } */
+
+        .b2 p {
+            text-align: justify;
+            font-size: 1.6rem;
+            color: rgb(92, 89, 86);
+            transition: all;
+            transition-duration: 2s;
+        }
+
+        .b2 p:hover {
+            color: #e9eef2;
+        }
+
+        .para {
+            /* color: rgb(213, 13, 13); */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1rem;
+            text-align: justify;
+            margin-left: 3px;
+        }
+
+        #up:hover {
+            color: #f5eded;
+        }
+
+
+        /* Second page */
+        .achieve {
+            margin: auto;
+            padding: 20px;
+            height: 300px;
+            width: 1000px;
+            /* border: 2px solid royalblue; */
+            color: orangered;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            transform: all;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.8s;
+            transition-duration: 2s;
+        }
+
+        .achieve p {
+            color: rgb(92, 89, 86);
+        }
+
+        .achieve p:hover {
+            color: rgb(240, 238, 237);
+        }
+
+        .achieve:hover {
+            background-color: orangered;
+            color: white;
+            width: 1010px;
+        }
+
+        .content {
+            margin-left: 50px;
+            height: 250px;
+            width: 350px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            font-display: initial;
+            text-align: center;
+            margin-top: 5px;
+            transition: all;
+            transition-duration: 2s;
+        }
+
+        .content p {
+            text-align: justify;
+            font-size: 1.6rem;
+            transition: all;
+            transition-duration: 2s;
+        }
+
+        .photo img {
+            margin-left: 200px;
+            height: 250px;
+            width: 300px;
+            border-radius: 15px;
+            /* border: 2px solid royalblue; */
+        }
+
+
+
+
+
+        /* third page  */
+        .project {
+            margin: auto;
+            padding: 20px;
+            height: 1600px;
+            width: 1000px;
+            color: orangered;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .project h1 {
+            font-size: 2rem;
+            font-display: initial;
+            text-align: center;
+            margin-top: 5px;
+            transition: all;
+            transition-duration: 2s;
+            color: orangered;
+        }
+
+        .project:hover {}
+
+        .pr1 {
+            margin: auto;
+            height: 320px;
+            width: 900px;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            color: rgb(92, 89, 86);
+            ;
+
+        }
+
+        .pr1 img {
+            transition: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            margin-right: 100px;
+        }
+
+        .pr1 p {
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 300px;
+            text-align: justify;
+            font-size: 1.6rem;
+            color: rgb(92, 89, 86);
+            transition: all;
+            transition-duration: 2s;
+        }
+
+        .pr1 p a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .pr1 img:hover {
+            height: 340px;
+            width: 340px;
+        }
+
+
+
+        .pr2 {
+            margin: auto;
+            height: 320px;
+            width: 900px;
+            /* border: 2px solid red; */
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            color: rgb(92, 89, 86);
+            ;
+
+        }
+
+        .pr2 img {
+            transition: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            margin-right: 100px;
+        }
+
+        .pr2 p {
+
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 300px;
+            text-align: justify;
+            font-size: 1.6rem;
+            color: rgb(92, 89, 86);
+            transition: all;
+            transition-duration: 2s;
+        }
+
+        .pr2 p a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .pr2 img:hover {
+            height: 340px;
+            width: 340px;
+        }
+
+        .pr3 {
+            margin: auto;
+            height: 320px;
+            width: 900px;
+            /* border: 2px solid red; */
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            color: rgb(92, 89, 86);
+            ;
+
+        }
+
+        .pr3 img {
+            transition: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            margin-right: 100px;
+        }
+
+        .pr3 p {
+
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 300px;
+            text-align: justify;
+            font-size: 1.6rem;
+            color: rgb(92, 89, 86);
+            transition: all;
+            transition-duration: 2s;
+        }
+
+        .pr3 p a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .pr3 img:hover {
+            height: 340px;
+            width: 340px;
+        }
+
+        .pr4 {
+            margin: auto;
+            height: 320px;
+            width: 900px;
+            /* border: 2px solid red; */
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            color: rgb(92, 89, 86);
+            ;
+
+        }
+
+        .pr4 img {
+            transition: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            margin-right: 100px;
+        }
+
+        .pr4 p {
+
+            height: 200px;
+            width: 300px;
+            text-align: justify;
+            font-size: 1.6rem;
+            color: rgb(92, 89, 86);
+            transition: all;
+            transition-duration: 2s;
+        }
+
+        .pr4 p a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .pr4 img:hover {
+            height: 340px;
+            width: 340px;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="taskp.html"><img src="img\myphoto.png" alt=""></a>
+        </div>
+
+        <div class="contact">
+            <a href="https://www.linkedin.com/in/sushil-hogale-238856266 " target="blank"><img src="img\likedin log.jpg"
+                    alt="" class="i1"></a>
+            <a href="https://www.instagram.com/" target="blank"><img src="img\insta logo.jpg" alt="" target="blank"
+                    class="i2"></a>
+            <a href="https://twitter.com/SSH94095044?t=HgLIDF2-HKk8b32zm2icVg&s=09" target="blank"><img
+                    src="img\twitter logo.jpg" alt="" class="i3"></a>
+            <a href="https://wa.me/qr/UWLZROOQFH5DK1" target="blank"><img src="img\wp logo.jpg" alt="" class="i4"></a>
+        </div>
+
+        <div class="resume">
+            <button><a href="img\My Resume.pdf">Download Resume</a></button>
+        </div>
+
+    </nav>
+    <hr>
+    <div class="container">
+        <div class="box1">
+            <!-- info -->
+            <h1>Hello, I'm Sushil
+                <br> Web Developer
+            </h1>
+
+            <p class="p1">
+                A highly Motivated engineer. I have a strong desire for learning new technologies.Web Development is one
+                of my favorite.
+            </p>
+        </div>
+
+        <div class="box2">
+            <img src="img\portfolio back.png" alt="portfolio" height="200px" width="200px">
+        </div>
+
+    </div>
+
+    <br>
+    <hr>
+
+    <div class="a1">
+        <span class="b1">
+            <img src="img\p3.jpg" alt="">
+        </span>
+
+        <div class="b2">
+            <h1 id="up">
+                SKILL'S
+            </h1>
+            <p id="up">In the past two years, I have aquired many skills like Coding in languages like
+                C/C++/Python, Problem solving, Frontend (HTML,CSS), DSA,SQL, and also Marketing.</p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="achieve">
+        <div class="content">
+            <h1>
+                Achievement
+            </h1>
+
+            <p>
+                Silver Medalist Science Olympiad. <br>
+                Student of the year of my school from 2019 batch.
+                <br>
+
+            </p>
+        </div>
+
+        <div class="photo">
+            <img src="img\p2.jpg" alt="">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="project">
+
+        <h1 class="title">
+            Project's
+        </h1>
+
+        <div class="pr2">
+
+            <a href="infosys\newproject.html"><img src="img/infosys.jpg" alt=""></a>
+            <p>
+                I have created this Infosys Website clone using HTML/CSS. This website frontend is same as original
+                website. I made this webiste by myself during learning days of webd.
+
+                <!-- <a href="infosys\newproject.html">Click Here</a> -->
+            </p>
+        </div>
+
+        <div class="pr1">
+
+            <a href="dbms\dashboard.html"><img src="img\dbms project.jpg" alt=""></a>
+
+            <p>
+                The webiste will be useful for Hospital
+                Managemnet System. This project is created using HTML/CSS.
+                <!-- <br>
+                <a href="dbms\dashboard.html" >Click Here</a> -->
+            </p>
+
+        </div>
+
+        <div class="pr3">
+
+            <a href="task1\img\finallandingpage.html"><img src="img\landingpage.jpg" alt=""></a>
+            <p>
+                Codsoft Task-1.
+                I have made the website as a part of Codsoft Intrnship.
+                This is a landing page which will be used for tourism booking.
+
+                <!-- <a href="task1\img\finallandingpage.html">Click Here</a> -->
+            </p>
+        </div>
+
+        <div class="pr4">
+
+            <a href="Minor_dashboard\customer_login.html"><img src="img/minorlogin.jpg" alt=""></a>
+            <p>
+                This is basic login page of My Second year Minor project.
+                <!-- <a href="Minor_dashboard\customer_login.html">Click Here</a> -->
+            </p>
+
+        </div>
+
+
+
+    </div>
+
+    <hr>
+    <footer> &copy; Copyright 2023 Sushil Hogale</footer>
+    
+
+</body>
+
+</html>
